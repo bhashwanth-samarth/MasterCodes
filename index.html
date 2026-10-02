@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Thunder — a creative digital portfolio featuring interactive experiences, visual design, and modern front-end development."
+    >
+
+    <meta
+        name="keywords"
+        content="Thunder, portfolio, web development, frontend, creative developer, UI design, digital experiences"
+    >
+
+    <meta name="author" content="Thunder">
+
+    <meta name="theme-color" content="#050814">
+
+    <meta
+        property="og:title"
+        content="Thunder — Creative Digital Portfolio"
+    >
+
+    <meta
+        property="og:description"
+        content="A high-energy creative portfolio built with modern front-end technologies."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <title>Thunder — Creative Digital Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Lenis Smooth Scroll -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css"
+    >
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- YOUR NAVBAR -->
+
+    <!-- THUNDER HERO -->
+    <section class="thunder-hero" id="thunder-hero">
+    </section>
+<!-- =========================================================
+     THUNDER HERO — SECTION 1
+     ========================================================= -->
+<section class="thunder-hero" id="thunder-hero">
+  <div class="hero-content">
+    <span class="hero-tag">⚡ POWER YOUR SKILLS. BUILD YOUR FUTURE.</span>
+    <h1 class="hero-title">Master Modern Technology & Programming</h1>
+    <p class="hero-description">
+      Master programming, web development, AI, and modern technology through practical courses and real-world projects.
+    </p>
+    <div class="hero-buttons">
+      <a href="#courses" class="btn btn-primary">Explore Courses</a>
+      <a href="#learning-paths" class="btn btn-secondary">Start Learning</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FEATURED COURSES — SECTION 2
+     ========================================================= -->
+<section class="courses-section" id="courses">
+  <div class="section-header">
+    <span class="section-tag">🔥 FEATURED COURSES</span>
+    <h2>Accelerate Your Tech Skills</h2>
+  </div>
+
+  <!-- Category Filter Bar -->
+  <div class="category-filters">
+    <button class="filter-btn active" data-filter="all">ALL</button>
+    <button class="filter-btn" data-filter="programming">PROGRAMMING</button>
+    <button class="filter-btn" data-filter="web">WEB DEVELOPMENT</button>
+    <button class="filter-btn" data-filter="ai">AI & ML</button>
+    <button class="filter-btn" data-filter="dsa">DATA STRUCTURES</button>
+  </div>
+
+  <!-- Course Cards Grid -->
+  <div class="courses-grid">
+    <!-- Card 1 -->
+    <div class="course-card glass-card">
+      <div class="card-badge">⚡ CODE CORE</div>
+      <h3>C Programming</h3>
+      <div class="course-meta">
+        <span>Level: Beginner</span>
+        <span>Duration: 6 Weeks</span>
+      </div>
+      <button class="btn-link" onclick="openCourse('c-programming')">View Course &rarr;</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="course-card glass-card">
+      <div class="card-badge">⚡ WEB STRIKE</div>
+      <h3>Web Development</h3>
+      <div class="course-meta">
+        <span>Level: Beginner to Pro</span>
+        <span>Duration: 8 Weeks</span>
+      </div>
+      <button class="btn-link" onclick="openCourse('web-dev')">View Course &rarr;</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="course-card glass-card">
+      <div class="card-badge">⚡ PYTHON POWER</div>
+      <h3>Python Programming</h3>
+      <div class="course-meta">
+        <span>Level: Beginner</span>
+        <span>Duration: 6 Weeks</span>
+      </div>
+      <button class="btn-link" onclick="openCourse('python')">View Course &rarr;</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="course-card glass-card">
+      <div class="card-badge">⚡ JAVA ENGINE</div>
+      <h3>Java Programming</h3>
+      <div class="course-meta">
+        <span>Level: Intermediate</span>
+        <span>Duration: 8 Weeks</span>
+      </div>
+      <button class="btn-link" onclick="openCourse('java')">View Course &rarr;</button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="course-card glass-card">
+      <div class="card-badge">⚡ ALGORITHM STRIKE</div>
+      <h3>Data Structures & Algorithms</h3>
+      <div class="course-meta">
+        <span>Level: Intermediate</span>
+        <span>Duration: 10 Weeks</span>
+      </div>
+      <button class="btn-link" onclick="openCourse('dsa')">View Course &rarr;</button>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="course-card glass-card">
+      <div class="card-badge">⚡ THUNDER AI</div>
+      <h3>AI & Machine Learning</h3>
+      <div class="course-meta">
+        <span>Level: Advanced</span>
+        <span>Duration: 12 Weeks</span>
+      </div>
+      <button class="btn-link" onclick="openCourse('ai-ml')">View Course &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     LEARNING PATHWAY — SECTION 3
+     ========================================================= -->
+<section class="learning-paths" id="learning-paths">
+  <div class="section-header">
+    <span class="section-tag">🧭 CHOOSE YOUR PATH</span>
+    <h2>Structured Progression</h2>
+  </div>
+
+  <div class="path-flow glass-card">
+    <div class="path-step">START</div>
+    <div class="path-arrow">↓</div>
+    <div class="path-step">C PROGRAMMING</div>
+    <div class="path-arrow">↓</div>
+    <div class="path-step">DATA STRUCTURES</div>
+    <div class="path-arrow">↓</div>
+    <div class="path-step">WEB DEVELOPMENT</div>
+    <div class="path-arrow">↓</div>
+    <div class="path-step">PYTHON / JAVA</div>
+    <div class="path-arrow">↓</div>
+    <div class="path-step">AI & MACHINE LEARNING</div>
+    <div class="path-arrow">↓</div>
+    <div class="path-step highlight">REAL-WORLD PROJECTS</div>
+  </div>
+</section>
+
+<!-- =========================================================
+     HANDS-ON PROJECTS — SECTION 4
+     ========================================================= -->
+<section class="projects-section" id="projects">
+  <div class="section-header">
+    <span class="section-tag">🧑‍💻 DON'T JUST LEARN. BUILD.</span>
+    <h2>Featured Hands-On Projects</h2>
+  </div>
+
+  <div class="projects-table-container glass-card">
+    <table class="projects-table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Project Built</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>C Programming</td>
+          <td>Student Management System</td>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>Personal Portfolio</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Expense Tracker</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Banking System</td>
+        </tr>
+        <tr>
+          <td>DSA</td>
+          <td>Algorithm Visualizer</td>
+        </tr>
+        <tr>
+          <td>AI / ML</td>
+          <td>Prediction System</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- =========================================================
+     CHALLENGE ZONE — SECTION 5
+     ========================================================= -->
+<section class="challenge-zone" id="challenges">
+  <div class="section-header">
+    <span class="section-tag">🌩️ CHALLENGE ZONE</span>
+    <h2>Ready for the Next Strike?</h2>
+  </div>
+
+  <div class="challenge-cards">
+    <div class="challenge-card glass-card">
+      <div class="difficulty easy">⚡ EASY</div>
+      <h4>CHALLENGE #001</h4>
+      <p>Write a C program to determine whether a number is prime.</p>
+      <button class="btn btn-secondary" onclick="openCourse('challenge-001')">Start Challenge &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     THUNDER STATS — SECTION 6
+     ========================================================= -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-card glass-card">
+      <h3>10K+</h3>
+      <p>LEARNERS</p>
+    </div>
+    <div class="stat-card glass-card">
+      <h3>06</h3>
+      <p>TECH COURSES</p>
+    </div>
+    <div class="stat-card glass-card">
+      <h3>100+</h3>
+      <p>CHALLENGES</p>
+    </div>
+    <div class="stat-card glass-card">
+      <h3>25+</h3>
+      <p>PROJECTS</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CALL TO ACTION  SECTION 7
+     ========================================================= -->
+<section class="cta-section glass-card">
+  <h2>YOUR NEXT SKILL STARTS HERE.</h2>
+  <p>Choose a course. Build something. Level up.</p>
+  <a href="#courses" class="btn btn-primary">EXPLORE COURSES →</a>
+</section>
+
+    <!-- YOUR EXISTING NEXT SECTION -->
+    <section class="intro-section">
+    </section>
+
+<!-- =========================================================
+     COURSE DETAILS MODAL (POPUP)
+     ========================================================= -->
+<div id="course-modal" class="course-modal" aria-hidden="true">
+  <div class="modal-overlay"></div>
+  <div class="modal-content glass-card">
+    <button class="modal-close-btn" id="modal-close">&times;</button>
+
+    <div class="modal-header">
+      <span class="modal-badge" id="modal-badge">⚡ CODE CORE</span>
+      <h2 id="modal-title">Course Title</h2>
+      <p id="modal-desc">Course description goes here.</p>
+    </div>
+
+    <div class="modal-meta-grid">
+      <div class="meta-item">
+        <span class="meta-label">LEVEL</span>
+        <span class="meta-value" id="modal-level">Beginner</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">DURATION</span>
+        <span class="meta-value" id="modal-duration">6 Weeks</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">MODULES</span>
+        <span class="meta-value" id="modal-modules">8 Modules</span>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <h3>📚 Syllabus & Modules</h3>
+      <ul class="module-list" id="modal-syllabus">
+        <!-- Dynamic Syllabus Items Will Be Injected Here -->
+      </ul>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-primary" onclick="alert('Starting Course!')">Start Learning Now</button>
+    </div>
+  </div>
+</div>
+    <!-- =========================================================
+         AMBIENT BACKDROP
+    ========================================================== -->
+
+    <div class="ambient-backdrop" aria-hidden="true">
+        <div class="ambient-glow ambient-glow-one"></div>
+        <div class="ambient-glow ambient-glow-two"></div>
+        <div class="ambient-grid"></div>
+    </div>
+
+    <!-- Cursor Lightning Physics Canvas -->
+
+    <canvas
+        id="lightning-canvas"
+        aria-hidden="true"
+    ></canvas>
+
+
+    <!-- =========================================================
+         HEADER / NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a
+                href="#top"
+                class="brand-logo"
+                aria-label="Thunder home"
+            >
+                <span class="brand-symbol">ϟ</span>
+                <span class="brand-name">THUNDER</span>
+            </a>
+
+            <nav
+                class="main-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="#about" class="nav-link">
+                    <span>01</span>
+                    About
+                </a>
+
+                <a href="#work" class="nav-link">
+                    <span>02</span>
+                    Work
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    <span>03</span>
+                    Contact
+                </a>
+            </nav>
+
+            <a
+                href="#contact"
+                class="header-cta"
+            >
+                <span>Let's Talk</span>
+                <span class="cta-arrow">↗</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+
+    <main id="top">
+
+
+        <!-- =====================================================
+             HERO SECTION
+        ====================================================== -->
+
+
+    <!-- NEW THUNDER HERO -->
+    <section class="thunder-hero">
+        ...
+    </section>
+
+
+    <!-- DO NOT TOUCH THIS -->
+    <!-- INTRO / ABOUT STRIP -->
+
+    <section class="intro-section">
+        ...
+    </section>
+
+
+        <!-- =====================================================
+             INTRO / ABOUT STRIP
+        ====================================================== -->
+
+        <section
+            class="intro-section"
+            aria-label="Thunder introduction"
+        >
+
+            <div class="container">
+
+                <div class="section-label">
+                    <span>01</span>
+                    <span>THE THUNDER MINDSET</span>
+                </div>
+
+                <div class="intro-content">
+
+                    <h2>
+                        DIGITAL EXPERIENCES
+                        <span class="muted-text">
+                            WITH ENERGY.
+                        </span>
+                    </h2>
+
+                    <p>
+                        Every project begins with curiosity and ends
+                        with an experience designed to be remembered.
+                        Thunder combines strategy, technology,
+                        animation, and visual design to create
+                        interfaces that feel alive.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WORK / MODULES SECTION
+        ====================================================== -->
+
+        <section
+            class="work-section"
+            id="work"
+            aria-labelledby="work-title"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div class="section-label">
+                        <span>02</span>
+                        <span>SELECTED WORK</span>
+                    </div>
+
+                    <h2 id="work-title">
+                        BUILT TO
+                        <span class="glow-text">STRIKE.</span>
+                    </h2>
+
+                    <p>
+                        A collection of digital concepts,
+                        interfaces, and experiences built around
+                        clarity, interaction, and visual impact.
+                    </p>
+
+                </div>
+
+
+                <div class="work-grid">
+
+
+                    <!-- CARD 01 -->
+
+                    <article class="work-card work-card-large">
+
+                        <div class="work-card-background">
+                            <div class="card-grid"></div>
+                            <div class="card-orb"></div>
+                        </div>
+
+                        <div class="work-card-top">
+                            <span class="project-number">
+                                01
+                            </span>
+
+                            <span class="project-type">
+                                DIGITAL PRODUCT
+                            </span>
+                        </div>
+
+                        <div class="work-card-content">
+
+                            <div class="project-icon">
+                                ↗
+                            </div>
+
+                            <h3>
+                                NEON
+                                <span>CORE</span>
+                            </h3>
+
+                            <p>
+                                A futuristic product interface
+                                focused on speed, clarity, and
+                                immersive interaction.
+                            </p>
+
+                        </div>
+
+                        <div class="work-card-footer">
+
+                            <div class="project-tags">
+                                <span>UI/UX</span>
+                                <span>FRONTEND</span>
+                                <span>MOTION</span>
+                            </div>
+
+                            <a
+                                href="#contact"
+                                class="card-link"
+                                aria-label="Explore Neon Core project"
+                            >
+                                Explore
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 02 -->
+
+                    <article class="work-card">
+
+                        <div class="work-card-background card-background-purple">
+                            <div class="card-grid"></div>
+                            <div class="card-orb"></div>
+                        </div>
+
+                        <div class="work-card-top">
+                            <span class="project-number">
+                                02
+                            </span>
+
+                            <span class="project-type">
+                                CREATIVE WEB
+                            </span>
+                        </div>
+
+                        <div class="work-card-content">
+
+                            <div class="project-icon">
+                                ✦
+                            </div>
+
+                            <h3>
+                                VOLT
+                            </h3>
+
+                            <p>
+                                An experimental landing page
+                                built around movement and
+                                high-energy visual storytelling.
+                            </p>
+
+                        </div>
+
+                        <div class="work-card-footer">
+
+                            <div class="project-tags">
+                                <span>DESIGN</span>
+                                <span>GSAP</span>
+                            </div>
+
+                            <a
+                                href="#contact"
+                                class="card-link"
+                                aria-label="Explore Volt project"
+                            >
+                                Explore
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 03 -->
+
+                    <article class="work-card">
+
+                        <div class="work-card-background card-background-red">
+                            <div class="card-grid"></div>
+                            <div class="card-orb"></div>
+                        </div>
+
+                        <div class="work-card-top">
+                            <span class="project-number">
+                                03
+                            </span>
+
+                            <span class="project-type">
+                                INTERACTIVE LAB
+                            </span>
+                        </div>
+
+                        <div class="work-card-content">
+
+                            <div class="project-icon">
+                                ⚡
+                            </div>
+
+                            <h3>
+                                ARC
+                            </h3>
+
+                            <p>
+                                A motion-driven digital experiment
+                                exploring interaction between
+                                cursor, light, and interface.
+                            </p>
+
+                        </div>
+
+                        <div class="work-card-footer">
+
+                            <div class="project-tags">
+                                <span>CANVAS</span>
+                                <span>MOTION</span>
+                            </div>
+
+                            <a
+                                href="#contact"
+                                class="card-link"
+                                aria-label="Explore Arc project"
+                            >
+                                Explore
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICES / CAPABILITIES
+        ====================================================== -->
+
+        <section
+            class="capabilities-section"
+            aria-labelledby="capabilities-title"
+        >
+
+            <div class="container">
+
+                <div class="capabilities-layout">
+
+                    <div class="section-label">
+                        <span>03</span>
+                        <span>CAPABILITIES</span>
+                    </div>
+
+                    <div class="capabilities-content">
+
+                        <h2 id="capabilities-title">
+                            FROM CONCEPT
+                            <span class="muted-text">
+                                TO EXPERIENCE.
+                            </span>
+                        </h2>
+
+                        <div class="capabilities-list">
+
+                            <div class="capability-item">
+                                <span class="capability-number">
+                                    01
+                                </span>
+
+                                <span class="capability-name">
+                                    Creative Development
+                                </span>
+
+                                <span class="capability-arrow">
+                                    ↗
+                                </span>
+                            </div>
+
+                            <div class="capability-item">
+                                <span class="capability-number">
+                                    02
+                                </span>
+
+                                <span class="capability-name">
+                                    Interactive UI Design
+                                </span>
+
+                                <span class="capability-arrow">
+                                    ↗
+                                </span>
+                            </div>
+
+                            <div class="capability-item">
+                                <span class="capability-number">
+                                    03
+                                </span>
+
+                                <span class="capability-name">
+                                    Motion & Animation
+                                </span>
+
+                                <span class="capability-arrow">
+                                    ↗
+                                </span>
+                            </div>
+
+                            <div class="capability-item">
+                                <span class="capability-number">
+                                    04
+                                </span>
+
+                                <span class="capability-name">
+                                    Front-End Engineering
+                                </span>
+
+                                <span class="capability-arrow">
+                                    ↗
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT CTA
+        ====================================================== -->
+
+        <section
+            class="contact-section"
+            id="contact"
+            aria-labelledby="contact-title"
+        >
+
+            <div class="container contact-container">
+
+                <div class="section-label">
+                    <span>04</span>
+                    <span>GET IN TOUCH</span>
+                </div>
+
+                <h2 id="contact-title">
+                    HAVE AN IDEA?
+                    <br>
+                    <span class="glow-text">
+                        LET'S CREATE IT.
+                    </span>
+                </h2>
+
+                <p class="contact-description">
+                    Have a project, concept, or experiment in mind?
+                    Start the conversation and turn the spark into
+                    something real.
+                </p>
+
+                <a
+                    href="mailto:hello@thunder.dev"
+                    class="contact-button"
+                >
+                    <span>hello@thunder.dev</span>
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <a
+                    href="#top"
+                    class="brand-logo footer-logo"
+                    aria-label="Return to Thunder home"
+                >
+                    <span class="brand-symbol">ϟ</span>
+                    <span class="brand-name">THUNDER</span>
+                </a>
+
+                <p class="footer-tagline">
+                    BUILD BOLD. CREATE IMPACT.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+
+                    <a
+                        href="mailto:hello@thunder.dev"
+                    >
+                        Email
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 THUNDER. ALL RIGHTS RESERVED.
+                </span>
+
+                <span>
+                    CRAFTED WITH CODE & CURIOSITY.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         JAVASCRIPT LIBRARIES
+    ========================================================== -->
+
+    <!-- Lenis -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"
+    ></script>
+
+    <!-- GSAP -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+
+    <!-- GSAP ScrollTrigger -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+
+    <!-- Thunder Application Script -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
